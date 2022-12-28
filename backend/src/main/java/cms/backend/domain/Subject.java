@@ -1,4 +1,4 @@
-package cms.backend.subject;
+package cms.backend.domain;
 
 import java.util.List;
 

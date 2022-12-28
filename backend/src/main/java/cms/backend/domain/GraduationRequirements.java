@@ -1,4 +1,4 @@
-package cms.backend.subject;
+package cms.backend.domain;
 
 public class GraduationRequirements {
     int admissionYear;

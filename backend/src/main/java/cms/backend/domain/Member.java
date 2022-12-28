@@ -1,15 +1,22 @@
 package cms.backend.domain;
 
-import cms.backend.domain.Credit;
 import javax.security.auth.Subject;
 import java.util.List;
 
-public class Student {
+public class Member {
     String studentId;
     String name;
     String password;
     List<Subject> takenSubjects;
     Credit credit;
+
+    public Member(String studentId, String name, String password, List<Subject> takenSubjects, Credit credit) {
+        this.studentId = studentId;
+        this.name = name;
+        this.password = password;
+        this.takenSubjects = takenSubjects;
+        this.credit = credit;
+    }
 
     public String getStudentId() {
         return studentId;

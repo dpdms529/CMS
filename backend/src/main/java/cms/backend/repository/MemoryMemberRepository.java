@@ -1,17 +1,18 @@
 package cms.backend.repository;
 
-import cms.backend.domain.Student;
-import cms.backend.repository.StudentRepository;
+import cms.backend.domain.Member;
 
-public class MemoryStudentRepository implements StudentRepository {
+public class MemoryMemberRepository implements MemberRepository {
+
+    private static Member store;
 
     @Override
-    public void save() {
-
+    public void save(Member member) {
+        store = member;
     }
 
     @Override
-    public Student find() {
-        return null;
+    public Member find(Member member) {
+        return store;
     }
 }
