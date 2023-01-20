@@ -1,4 +1,4 @@
-import {Table} from 'react-bootstrap';
+import {} from 'react-bootstrap';
 
 function Simulation() {
     let _contents = <div>졸업시뮬레이션</div>
