@@ -1,14 +1,20 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Pages from "./pages/pages";
-import {BrowserRouter} from 'react-router-dom';
+import {Container} from 'react-bootstrap';
+import Header from './components/Header';
+import Router from './pages/Router';
 
 function App() {
-	return (
-		<BrowserRouter>
-		  <Pages/>
-		</BrowserRouter>
-	);
+  var _contents = <>
+                    <Header></Header>
+                    
+                    <Container className="App">
+                      <Router></Router>
+                    </Container>
+                  </>
+
+  return (
+    _contents
+  );
 }
 
 export default App;
